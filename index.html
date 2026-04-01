@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Portal</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+  <h1><i class="fa-solid fa-briefcase"></i> Job Portal</h1>
+</header>
+
+<div class="container">
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="🔍 Search jobs...">
+
+    <select id="companyFilter">
+      <option value="">All Companies</option>
+    </select>
+
+    <select id="roleFilter">
+      <option value="">All Roles</option>
+      <option value="Developer">Developer</option>
+      <option value="Designer">Designer</option>
+    </select>
+  </div>
+
+  <div id="jobList"></div>
+
+  <h2><i class="fa-solid fa-star"></i> Saved Jobs</h2>
+  <div id="savedJobs"></div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
